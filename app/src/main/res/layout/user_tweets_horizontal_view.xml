@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:src="@drawable/beaches"
+
+            android:id="@+id/user_profile_card_view"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/user_profile_card_view">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="User Name"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                   android:paddingLeft="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:id="@+id/username_cardview"
+                    />
+
+                <TextView
+                    android:text="\@screen_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/screen_name_cardview" />
+
+                <TextView
+                    android:text="1d"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:id="@+id/tweet_post_day_card_view" />
+
+                <Button
+                    android:text=">"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tweet_moreoptionbutton"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:text="Yo People Wassup"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tweet_statuscardtext"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tweet_mediaView" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@drawable/replyicon"
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="20dp"
+
+                    android:id="@+id/textView5"
+                    />
+
+                <TextView
+                    android:text="1"
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="20dp"
+
+                    android:id="@+id/textView6"
+                    />
+
+                <ImageView
+                    android:src="@drawable/retweeticon"
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="20dp"
+                    android:id="@+id/textView7"
+                    />
+
+                <TextView
+                    android:text="2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="20dp"
+                    android:id="@+id/textView8"
+                    />
+
+                <ImageView
+                    android:src="@drawable/heart"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="20dp"
+                    android:id="@+id/textView9" />
+                <TextView
+                    android:text="3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="20dp"
+                    android:id="@+id/textView10" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
